@@ -1,4 +1,3 @@
-import os
 from llama_index.core.tools import FunctionTool
 from Bio.Entrez import efetch
 from Bio import Entrez
@@ -49,6 +48,5 @@ already_researched = FunctionTool.from_defaults(
     name= "science_field_retriever",
     description= """ This tool can research what is already known about a topic,
         use this to retrieve information about what has already been researched in this
-        field of study
-        """
+        field of study"""
         )

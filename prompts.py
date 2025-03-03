@@ -1,4 +1,4 @@
-context = """purpose: the primary role of this agent is to assist professors in the generation of scientific research proposals. 
+context = """purpose: the primary role of this agent is to assist professors in the generation of scientific research proposals in the context of medical research. 
     By analysing existing research papers in a similar field, the agent will be able to generate research projects.
     These proposals will be validated against a knowledge base of existing scientific papers in the field. 
     """
@@ -11,9 +11,6 @@ context2 = """purpose: the role of this agent will be to query the pubmed databa
 
 
 prompt = """
-    propose new research projects based on the current context. validate these research projects against what has already been done in the field. The field you should be focusing on can be found using the research_context tool. My field of reseaerch is coronary heart disease. Please validate that it's original research and that it has not been done before. 
+    you are assisting a professor which needs to make new research proposals, please generate novel research projects based on the given context and verify that these are novel projects by looking your proposals in the already_researched tool. 
     """
 
-
-# another Sia project that might be nice to try:
-#   generate business proposals based on what has already been done, then try to validate these with what's already in the database. 
